@@ -1,0 +1,118 @@
+html,
+body {
+  background-color: var(--grey-900);
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter-Regular;
+}
+
+/* 0. card positionment */
+
+.container {
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 425px;
+  background-color: var(--grey-800);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding-top: 28px;
+  padding-bottom: 50px;
+}
+
+/* 1. the person infromation */
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin: 12px;
+}
+
+.image {
+  width: 100px;
+  border-radius: 100%;
+}
+
+.perso-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.name {
+  font-family: Inter-Regular;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.location {
+  color: var(--green);
+  font-family: Inter-Bold;
+}
+
+.descr {
+  color: var(--white);
+}
+
+/* 2. social links */
+
+.card-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.list-item {
+  background-color: var(--grey-700);
+  font-family: Inter-Bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 80%;
+  padding: 0.75rem;
+}
+
+.list-item:hover {
+  transition: 0.25s;
+  background-color: var(--green);
+  color: var(--grey-700);
+}
+
+@media (max-width: 412px) {
+  .card {
+    width: 315px;
+    padding-top: 14px;
+    padding-bottom: 28px;
+  }
+
+  .descr {
+    font-size: 14px;
+  }
+}
